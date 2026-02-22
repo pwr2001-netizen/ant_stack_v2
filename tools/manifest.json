@@ -1,0 +1,13 @@
+{
+  "v": 1,
+  "required_files": [
+    ".gitignore",
+    "tools/ctl.py",
+    "tools/manifest.json"
+  ],
+  "min_bytes": {
+    ".gitignore": 10,
+    "tools/ctl.py": 200,
+    "tools/manifest.json": 50
+  }
+}
