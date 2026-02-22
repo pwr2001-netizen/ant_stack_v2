@@ -129,7 +129,16 @@ def cmd_run(root: Path, args: list[str]) -> dict:
         group_sh = root / "bin" / "run_discovery_group.sh"
         if not group_sh.exists():
             return {"ok": False, "stage": "run", "target": "all", "step": "group", "msg": "missing bin/run_discovery_group.sh"}
-        cG, oG = run_cmd(["bash", str(group_sh)], root)
+        # seed path: first arg after "all" (required)
+        seed = rest[0] if rest else ""
+        if (not seed) or (not (root / seed).exists() and not Path(seed).exists()):
+            return {"ok": False, "stage": "run", "target": "all", "step": "group",
+                    "msg": "seed_required", "usage": "ctl run all <seed_json_path>"}
+
+        # allow both relative-to-repo and absolute paths
+        seed_path = str((root / seed).resolve()) if (root / seed).exists() else str(Path(seed).resolve())
+
+        cG, oG = run_cmd(["bash", str(group_sh), seed_path], root)
         if cG != 0:
             return {"ok": False, "stage": "run", "target": "all", "step": "group", "exit_code": cG, "output": oG[-8000:]}
 
