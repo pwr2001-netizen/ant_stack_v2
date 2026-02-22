@@ -1,0 +1,14 @@
+{
+  "v": 1,
+  "root": ".", 
+  "var_dir": "var",
+  "discovery_dir": "var/discovery",
+  "seeds_dir": "var/discovery/seeds",
+  "candidates_dir": "var/discovery/candidates_queue",
+  "probation_dir": "var/discovery/probation",
+  "runlog_dir": "var/discovery/runlog",
+  "tmp_dir": "var/tmp",
+  "tests_dir": "tests",
+  "fixtures_dir": "tests/fixtures",
+  "golden_dir": "tests/golden"
+}

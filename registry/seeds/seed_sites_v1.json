@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "type": "seed_sites",
+  "updated_utc": "2026-02-19T00:00:00Z",
+  "sites": [
+    {
+      "category_id": 101,
+      "category_slug": "us_market",
+      "base_url": "https://www.bloomberg.com",
+      "site": "bloomberg.com"
+    }
+  ]
+}

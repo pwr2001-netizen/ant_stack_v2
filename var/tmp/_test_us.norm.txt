@@ -1,0 +1,11 @@
+{"ok": true, "candidates_written": 0}
+ok: true
+candidates_written: 0
+{"ok": true, "probation": 0, "tombstone": 0}
+ok: true
+passed: 0
+failed: 0
+ok: true
+added: 0
+skipped: 0
+[DONE] v2 discovery completed

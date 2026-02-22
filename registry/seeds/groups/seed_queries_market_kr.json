@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "type": "seed_queries",
+  "updated_utc": "2026-02-19T14:47:03Z",
+  "queries": [
+    {
+      "category_id": 201,
+      "category_slug": "kr_market",
+      "query": "KOSPI market news",
+      "lang": "en"
+    },
+    {
+      "category_id": 9201,
+      "category_slug": "kr_kospi",
+      "query": "코스피 시장 뉴스",
+      "lang": "ko"
+    },
+    {
+      "category_id": 9202,
+      "category_slug": "kr_fx",
+      "query": "원달러 환율 뉴스",
+      "lang": "ko"
+    },
+    {
+      "category_id": 9203,
+      "category_slug": "kr_rates",
+      "query": "한국 금리 기준금리 뉴스",
+      "lang": "ko"
+    },
+    {
+      "category_id": 201,
+      "category_slug": "kr_market",
+      "query": "한국시장 뉴스",
+      "lang": "ko"
+    },
+    {
+      "category_id": 201,
+      "category_slug": "kr_market",
+      "query": "최신 한국시장 소식",
+      "lang": "ko"
+    },
+    {
+      "category_id": 201,
+      "category_slug": "kr_market",
+      "query": "Korea Market Korea news",
+      "lang": "en"
+    }
+  ]
+}

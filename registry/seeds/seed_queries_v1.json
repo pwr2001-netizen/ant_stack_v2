@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "type": "seed_queries",
+  "updated_utc": "2026-02-19T00:00:00Z",
+  "queries": [
+    { "category_id": 101, "category_slug": "us_market",           "query": "US stock market news",                       "lang": "en" },
+    { "category_id": 102, "category_slug": "global_equities",     "query": "global equities market news",                "lang": "en" },
+    { "category_id": 103, "category_slug": "global_macro",        "query": "global macro economy news",                  "lang": "en" },
+    { "category_id": 104, "category_slug": "fed_policy",          "query": "Federal Reserve policy update",              "lang": "en" },
+    { "category_id": 105, "category_slug": "crypto_market",       "query": "cryptocurrency market update",               "lang": "en" },
+    { "category_id": 106, "category_slug": "commodities",         "query": "oil gold commodities market news",           "lang": "en" },
+    { "category_id": 107, "category_slug": "global_risk",         "query": "geopolitical risk market impact",            "lang": "en" },
+    { "category_id": 108, "category_slug": "earnings",            "query": "earnings season results surprises",          "lang": "en" },
+    { "category_id": 109, "category_slug": "global_investing",    "query": "investment strategy outlook 2026",           "lang": "en" },
+    { "category_id": 201, "category_slug": "kr_market",           "query": "KOSPI market news",                           "lang": "en" }
+  ]
+}

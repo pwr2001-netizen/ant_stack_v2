@@ -1,0 +1,1 @@
+{"action":"probation_history","canonical_url":"https://example.com/rss","events":[{"canonical_url":"https://example.com/rss","metrics":{"dup_ratio":0.1,"error_rate":0.05,"items_count":30,"valid_ratio":0.7},"sha1":"3ba3bf5779b212cda451a62ce8c679776f99c85c","ts":"2026-02-22T05:05:30Z"}],"ok":true,"sha1":"3ba3bf5779b212cda451a62ce8c679776f99c85c","ts":"2026-02-22T05:13:03Z","v":1}

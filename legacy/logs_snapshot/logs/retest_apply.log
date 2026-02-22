@@ -1,0 +1,1 @@
+{"v": 1, "checked_utc": "2026-02-19T14:03:01Z", "kind": "retest_feed", "ok": false, "status": "", "content_type": "", "url": "https://example.invalid/rss", "category_id": 101, "category_slug": "us_market", "source": "tombstone_retest", "score": 0.1, "decision": "stay_tombstone"}

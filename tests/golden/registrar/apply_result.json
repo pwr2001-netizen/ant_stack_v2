@@ -1,0 +1,14 @@
+{
+  "v": 1,
+  "ts": "2026-02-22T11:44:35+0900",
+  "action": "registrar_apply",
+  "ok": true,
+  "mode": "apply",
+  "counts": {
+    "ops_total": 0,
+    "applied": 0,
+    "skipped": 0,
+    "errors": 0
+  },
+  "notes": []
+}

@@ -1,0 +1,23 @@
+[INFO] v2 root: /home/donghan/ant_stack_v2
+[INFO] legacy root: /home/donghan/ant_stack
+[INFO] config: /home/donghan/ant_stack_v2/config/paths.json
+[INFO] group: us
+[INFO] injected seed json candidates:
+-rw-rw-r-- 1 donghan donghan 62  2월 22 11:45 ./data/us.json
+-rw-rw-r-- 1 donghan donghan 62  2월 22 11:45 ./seed_registry/us.json
+-rw-rw-r-- 1 donghan donghan 62  2월 22 11:45 ./seeds.json
+-rw-rw-r-- 1 donghan donghan 62  2월 22 11:45 ./seeds/us.json
+-rw-rw-r-- 1 donghan donghan 62  2월 22 11:45 ./us.json
+[INFO] using legacy script: bin/run_discovery_group.sh
+[INFO] calling with GROUP_NAME arg: us
+{"ok": true, "candidates_written": 0}
+ok: true
+candidates_written: 0
+{"ok": true, "probation": 0, "tombstone": 0}
+ok: true
+passed: 0
+failed: 0
+ok: true
+added: 0
+skipped: 0
+[DONE] v2 discovery completed

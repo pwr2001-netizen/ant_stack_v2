@@ -1,0 +1,1 @@
+{"ok": true, "out": "var/registrar/runlog/apply_result.json", "counts": {"ops_total": 1, "applied": 0, "skipped": 1, "errors": 0}}

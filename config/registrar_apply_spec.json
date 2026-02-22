@@ -1,0 +1,9 @@
+{
+  "v": 1,
+  "action": "registrar_apply",
+  "input": {
+    "plan_json": "var/registrar/runlog/compile_plan.json",
+    "out_runlog_json": "var/registrar/runlog/apply_result.json",
+    "mode": "apply"
+  }
+}

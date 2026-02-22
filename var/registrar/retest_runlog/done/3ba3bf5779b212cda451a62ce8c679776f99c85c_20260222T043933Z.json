@@ -1,0 +1,1 @@
+{"action":"retest_request","canonical_url":"https://example.com/rss","error":null,"input_url":"https://example.com/rss#frag","ok":true,"operator":"Sentinel","queue_file":"var/registrar/retest_queue/3ba3bf5779b212cda451a62ce8c679776f99c85c_20260222T043933Z.json","reason":"manual_retest_test","sha1":"3ba3bf5779b212cda451a62ce8c679776f99c85c","ts":"2026-02-22T04:39:33Z","v":1}

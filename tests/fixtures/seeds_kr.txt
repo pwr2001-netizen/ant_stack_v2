@@ -1,0 +1,2 @@
+https://example.kr/rss
+https://example.kr/feed

@@ -1,0 +1,4 @@
+{"v": 1, "utc": "2026-02-19T23:10:48Z", "group": "seed_queries_market_us", "seed": "registry/seeds/groups/seed_queries_market_us.json", "decision": "ok", "candidates": 37, "passed": 37, "failed": 0, "added": 0, "skipped": 0}
+{"v": 1, "utc": "2026-02-19T23:10:52Z", "group": "seed_queries_market_kr", "seed": "registry/seeds/groups/seed_queries_market_kr.json", "decision": "ok", "candidates": 7, "passed": 7, "failed": 0, "added": 0, "skipped": 0}
+{"v": 1, "utc": "2026-02-22T01:41:52Z", "group": "seed_queries_market_kr", "seed": "/home/donghan/ant_stack/registry/seeds/groups/seed_queries_market_kr.json", "decision": "ok", "candidates": 7, "passed": 7, "failed": 0, "added": 0, "skipped": 0}
+{"v": 1, "utc": "2026-02-22T01:42:24Z", "group": "seed_queries_market_us", "seed": "/home/donghan/ant_stack/registry/seeds/groups/seed_queries_market_us.json", "decision": "ok", "candidates": 37, "passed": 37, "failed": 0, "added": 0, "skipped": 0}

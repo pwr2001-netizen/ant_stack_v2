@@ -1,0 +1,229 @@
+{
+  "version": "1.0",
+  "type": "seed_queries",
+  "updated_utc": "2026-02-19T14:47:03Z",
+  "queries": [
+    {
+      "category_id": 101,
+      "category_slug": "us_market",
+      "query": "US stock market news",
+      "lang": "en"
+    },
+    {
+      "category_id": 102,
+      "category_slug": "global_equities",
+      "query": "global equities market news",
+      "lang": "en"
+    },
+    {
+      "category_id": 103,
+      "category_slug": "global_macro",
+      "query": "global macro economy news",
+      "lang": "en"
+    },
+    {
+      "category_id": 104,
+      "category_slug": "fed_policy",
+      "query": "Federal Reserve policy update",
+      "lang": "en"
+    },
+    {
+      "category_id": 105,
+      "category_slug": "crypto_market",
+      "query": "cryptocurrency market update",
+      "lang": "en"
+    },
+    {
+      "category_id": 106,
+      "category_slug": "commodities",
+      "query": "oil gold commodities market news",
+      "lang": "en"
+    },
+    {
+      "category_id": 107,
+      "category_slug": "global_risk",
+      "query": "geopolitical risk market impact",
+      "lang": "en"
+    },
+    {
+      "category_id": 108,
+      "category_slug": "earnings",
+      "query": "earnings season results surprises",
+      "lang": "en"
+    },
+    {
+      "category_id": 109,
+      "category_slug": "global_investing",
+      "query": "investment strategy outlook 2026",
+      "lang": "en"
+    },
+    {
+      "category_id": 9001,
+      "category_slug": "us_rates",
+      "query": "US interest rates outlook",
+      "lang": "en"
+    },
+    {
+      "category_id": 9002,
+      "category_slug": "us_inflation",
+      "query": "US inflation CPI PCE update",
+      "lang": "en"
+    },
+    {
+      "category_id": 9003,
+      "category_slug": "us_jobs",
+      "query": "US jobs report payrolls unemployment",
+      "lang": "en"
+    },
+    {
+      "category_id": 9004,
+      "category_slug": "us_tech",
+      "query": "US technology stocks market news",
+      "lang": "en"
+    },
+    {
+      "category_id": 9005,
+      "category_slug": "us_banks",
+      "query": "US banks financial sector news",
+      "lang": "en"
+    },
+    {
+      "category_id": 9006,
+      "category_slug": "us_energy",
+      "query": "US energy oil gas market news",
+      "lang": "en"
+    },
+    {
+      "category_id": 9007,
+      "category_slug": "us_real_estate",
+      "query": "US real estate housing market news",
+      "lang": "en"
+    },
+    {
+      "category_id": 9008,
+      "category_slug": "us_dollar",
+      "query": "US dollar DXY forex market news",
+      "lang": "en"
+    },
+    {
+      "category_id": 9009,
+      "category_slug": "us_treasuries",
+      "query": "US Treasury yields bond market news",
+      "lang": "en"
+    },
+    {
+      "category_id": 9010,
+      "category_slug": "us_geopolitics",
+      "query": "geopolitical risk impact on markets",
+      "lang": "en"
+    },
+    {
+      "category_id": 101,
+      "category_slug": "us_market",
+      "query": "US Market news",
+      "lang": "en"
+    },
+    {
+      "category_id": 101,
+      "category_slug": "us_market",
+      "query": "latest US Market update",
+      "lang": "en"
+    },
+    {
+      "category_id": 102,
+      "category_slug": "global_equities",
+      "query": "Global Equities news",
+      "lang": "en"
+    },
+    {
+      "category_id": 102,
+      "category_slug": "global_equities",
+      "query": "latest Global Equities update",
+      "lang": "en"
+    },
+    {
+      "category_id": 103,
+      "category_slug": "global_macro",
+      "query": "Global Macro news",
+      "lang": "en"
+    },
+    {
+      "category_id": 103,
+      "category_slug": "global_macro",
+      "query": "latest Global Macro update",
+      "lang": "en"
+    },
+    {
+      "category_id": 104,
+      "category_slug": "fed_policy",
+      "query": "Fed Policy news",
+      "lang": "en"
+    },
+    {
+      "category_id": 104,
+      "category_slug": "fed_policy",
+      "query": "latest Fed Policy update",
+      "lang": "en"
+    },
+    {
+      "category_id": 105,
+      "category_slug": "crypto_market",
+      "query": "Crypto Market news",
+      "lang": "en"
+    },
+    {
+      "category_id": 105,
+      "category_slug": "crypto_market",
+      "query": "latest Crypto Market update",
+      "lang": "en"
+    },
+    {
+      "category_id": 106,
+      "category_slug": "commodities",
+      "query": "Commodities news",
+      "lang": "en"
+    },
+    {
+      "category_id": 106,
+      "category_slug": "commodities",
+      "query": "latest Commodities update",
+      "lang": "en"
+    },
+    {
+      "category_id": 107,
+      "category_slug": "global_risk",
+      "query": "Global Risk news",
+      "lang": "en"
+    },
+    {
+      "category_id": 107,
+      "category_slug": "global_risk",
+      "query": "latest Global Risk update",
+      "lang": "en"
+    },
+    {
+      "category_id": 108,
+      "category_slug": "earnings",
+      "query": "Earnings news",
+      "lang": "en"
+    },
+    {
+      "category_id": 108,
+      "category_slug": "earnings",
+      "query": "latest Earnings update",
+      "lang": "en"
+    },
+    {
+      "category_id": 109,
+      "category_slug": "global_investing",
+      "query": "Investing Strategy news",
+      "lang": "en"
+    },
+    {
+      "category_id": 109,
+      "category_slug": "global_investing",
+      "query": "latest Investing Strategy update",
+      "lang": "en"
+    }
+  ]
+}

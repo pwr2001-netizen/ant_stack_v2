@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "action": "registrar_compile",
+  "input": {
+    "probation_dir": "var/discovery/probation",
+    "active_dir": "var/registrar/active",
+    "tombstone_dir": "var/registrar/tombstone",
+    "out_plan_json": "var/registrar/runlog/compile_plan.json"
+  }
+}

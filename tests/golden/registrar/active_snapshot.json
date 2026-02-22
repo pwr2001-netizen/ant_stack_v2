@@ -1,0 +1,7 @@
+{
+  "v": 1,
+  "ts": "2026-02-22T11:47:52+0900",
+  "status": "active",
+  "url": "https://example.com/rss",
+  "source_probation_file": "var/discovery/probation/p_fixture_001.json"
+}

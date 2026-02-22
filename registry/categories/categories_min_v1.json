@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "type": "categories",
+  "updated_utc": "2026-02-19T00:00:00Z",
+  "categories": [
+    {"id":101,"slug":"us_market","name_ko":"미증시/미국시장","name_en":"US Market","group":"market_us"},
+    {"id":102,"slug":"global_equities","name_ko":"글로벌 증시","name_en":"Global Equities","group":"market_us"},
+    {"id":103,"slug":"global_macro","name_ko":"글로벌 거시","name_en":"Global Macro","group":"market_us"},
+    {"id":104,"slug":"fed_policy","name_ko":"미 연준/통화정책","name_en":"Fed Policy","group":"market_us"},
+    {"id":105,"slug":"crypto_market","name_ko":"가상자산 시장","name_en":"Crypto Market","group":"market_us"},
+    {"id":106,"slug":"commodities","name_ko":"원자재/유가/금","name_en":"Commodities","group":"market_us"},
+    {"id":107,"slug":"global_risk","name_ko":"글로벌 리스크","name_en":"Global Risk","group":"market_us"},
+    {"id":108,"slug":"earnings","name_ko":"실적/어닝","name_en":"Earnings","group":"market_us"},
+    {"id":109,"slug":"global_investing","name_ko":"투자/전략","name_en":"Investing Strategy","group":"market_us"},
+    {"id":201,"slug":"kr_market","name_ko":"한국시장","name_en":"Korea Market","group":"market_kr"}
+  ]
+}

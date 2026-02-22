@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "type": "seed_feeds",
+  "updated_utc": "2026-02-19T00:00:00Z",
+  "feeds": [
+    {
+      "category_id": 101,
+      "category_slug": "us_market",
+      "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
+      "site": "wsj.com"
+    }
+  ]
+}
