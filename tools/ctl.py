@@ -118,13 +118,63 @@ def cmd_run(root: Path, args: list[str]) -> dict:
     sub = (args[0].lower() if args else "group")
     rest = args[1:] if args else []
 
+    # run all: verify -> lint -> test -> discovery(group) -> registrar
+    if sub == "all":
+        # 1) tests
+        t = cmd_test(root)
+        if not t.get("ok", False):
+            return {"ok": False, "stage": "run", "target": "all", "step": "test", "test": t}
+
+        # 2) discovery group
+        group_sh = root / "bin" / "run_discovery_group.sh"
+        if not group_sh.exists():
+            return {"ok": False, "stage": "run", "target": "all", "step": "group", "msg": "missing bin/run_discovery_group.sh"}
+        cG, oG = run_cmd(["bash", str(group_sh)], root)
+        if cG != 0:
+            return {"ok": False, "stage": "run", "target": "all", "step": "group", "exit_code": cG, "output": oG[-8000:]}
+
+        # 3) registrar
+        compile_py = root / "ants" / "registrar" / "registrar_compile.py"
+        apply_py = root / "ants" / "registrar" / "registrar_apply.py"
+        if not compile_py.exists() or not apply_py.exists():
+            return {"ok": False, "stage": "run", "target": "all", "step": "registrar",
+                    "msg": "missing_registrar_files", "compile": str(compile_py), "apply": str(apply_py)}
+
+        c1, o1 = run_cmd([sys.executable, str(compile_py)], root)
+        if c1 != 0:
+            return {"ok": False, "stage": "run", "target": "all", "step": "registrar_compile", "exit_code": c1, "output": o1[-8000:]}
+
+        c2, o2 = run_cmd([sys.executable, str(apply_py)], root)
+        out = (oG + "\n" + o1 + "\n" + o2)
+        return {"ok": c2 == 0, "stage": "run", "target": "all", "step": "done", "exit_code": c2, "output": out[-8000:]}
+
+
+    # registrar: python compile -> python apply (MUST NOT run via bash)
+    if sub == "registrar":
+        compile_py = root / "ants" / "registrar" / "registrar_compile.py"
+        apply_py = root / "ants" / "registrar" / "registrar_apply.py"
+        if not compile_py.exists() or not apply_py.exists():
+            return {"ok": False, "stage": "run", "msg": "missing_registrar_files",
+                    "compile": str(compile_py), "apply": str(apply_py)}
+
+        c1, o1 = run_cmd([sys.executable, str(compile_py)] + rest, root)
+        if c1 != 0:
+            return {"ok": False, "stage": "run", "target": "registrar", "step": "compile",
+                    "exit_code": c1, "output": o1[-8000:]}
+
+        c2, o2 = run_cmd([sys.executable, str(apply_py)] + rest, root)
+        out = (o1 + "\n" + o2)
+        return {"ok": c2 == 0, "stage": "run", "target": "registrar", "step": "apply",
+                "exit_code": c2, "output": out[-8000:]}
+
     routes = {
         "group": root / "bin" / "run_discovery_group.sh",
         "tests": root / "bin" / "run_tests.sh",
         "smoke": root / "bin" / "smoke.sh",
         "discovery": root / "bin" / "run_discovery.sh",
         "batch": root / "bin" / "run_discovery_batch.sh",
-    }
+            "registrar": root / "ants" / "registrar" / "registrar_compile.py",
+}
 
     entry = routes.get(sub)
     if entry is None:
