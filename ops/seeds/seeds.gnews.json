@@ -1,0 +1,42 @@
+{
+  "v": 1,
+  "group": "gnews_seed",
+  "queries": [
+    {
+      "category_id": 1,
+      "category_slug": "us_politics",
+      "q": "U.S. Congress immigration reform",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "score": 0.92
+    },
+    {
+      "category_id": 2,
+      "category_slug": "markets",
+      "q": "S&P 500 earnings outlook",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "score": 0.9
+    },
+    {
+      "category_id": 3,
+      "category_slug": "ai",
+      "q": "open source LLM inference optimization",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "score": 0.9
+    },
+    {
+      "category_id": 4,
+      "category_slug": "korea_visa",
+      "q": "Korea E-9 visa policy update",
+      "hl": "en-US",
+      "gl": "US",
+      "ceid": "US:en",
+      "score": 0.88
+    }
+  ]
+}
