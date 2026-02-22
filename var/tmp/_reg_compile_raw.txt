@@ -1,1 +1,0 @@
-{"ok": true, "plan": "var/registrar/runlog/compile_plan.json", "counts": {"probation_files": 1, "to_active": 0, "to_tombstone": 0, "skipped": 1}}

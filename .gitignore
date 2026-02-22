@@ -1,0 +1,16 @@
+# runtime outputs
+var/
+!var/.keep
+
+# temp / caches
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
