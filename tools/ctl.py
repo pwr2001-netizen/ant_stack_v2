@@ -108,14 +108,33 @@ def cmd_run(root: Path, args: list[str]) -> dict:
     if not l["ok"]:
         return {"ok": False, "stage": "run", "msg": "lint_failed", "lint": l}
 
-    # 여기는 "실제 실행 엔트리포인트"를 1개로 고정해야 함.
-    # 지금은 예시로 bin/run_discovery_group.sh가 있으면 그걸 실행하도록 함.
-    entry = root / "bin" / "run_discovery_group.sh"
-    if not entry.exists():
-        return {"ok": False, "stage": "run", "msg": "missing bin/run_discovery_group.sh (set your single run entrypoint here)"}
+    # subcommand routing
+    # 사용 예:
+    #   ctl.py run group
+    #   ctl.py run tests
+    #   ctl.py run smoke
+    #   ctl.py run discovery
+    #   ctl.py run batch
+    sub = (args[0].lower() if args else "group")
+    rest = args[1:] if args else []
 
-    code, out = run_cmd(["bash", str(entry)] + args, root)
-    return {"ok": code == 0, "stage": "run", "exit_code": code, "output": out[-8000:]}
+    routes = {
+        "group": root / "bin" / "run_discovery_group.sh",
+        "tests": root / "bin" / "run_tests.sh",
+        "smoke": root / "bin" / "smoke.sh",
+        "discovery": root / "bin" / "run_discovery.sh",
+        "batch": root / "bin" / "run_discovery_batch.sh",
+    }
+
+    entry = routes.get(sub)
+    if entry is None:
+        return {"ok": False, "stage": "run", "msg": "unknown_run_target", "target": sub, "allowed": sorted(routes.keys())}
+    if not entry.exists():
+        return {"ok": False, "stage": "run", "msg": "missing_entrypoint", "entry": str(entry)}
+
+    code, out = run_cmd(["bash", str(entry)] + rest, root)
+    return {"ok": code == 0, "stage": "run", "target": sub, "exit_code": code, "output": out[-8000:]}
+
 
 def main():
     t0 = time.time()
