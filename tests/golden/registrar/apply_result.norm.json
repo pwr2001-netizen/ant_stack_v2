@@ -1,10 +1,10 @@
 {
   "action": "registrar_apply",
   "counts": {
-    "applied": 0,
+    "applied": 4,
     "errors": 0,
-    "ops_total": 1,
-    "skipped": 1
+    "ops_total": 6,
+    "skipped": 2
   },
   "mode": "apply",
   "notes": [],

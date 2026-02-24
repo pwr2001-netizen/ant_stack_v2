@@ -1,9 +1,9 @@
 {
   "action": "registrar_compile",
   "counts": {
-    "probation_files": 1,
-    "skipped": 1,
-    "to_active": 0,
+    "probation_files": 6,
+    "skipped": 2,
+    "to_active": 4,
     "to_tombstone": 0
   },
   "ok": true,
@@ -13,6 +13,36 @@
       "op": "skip",
       "reason": "tombstoned_permanent",
       "url": "https://example.com/rss"
+    },
+    {
+      "detail": "Extra data: line 2 column 1 (char 566)",
+      "file": "var/discovery/probation/p_seeds_gnews_001.json",
+      "op": "skip",
+      "reason": "json_parse_error"
+    },
+    {
+      "dst": "var/registrar/active/18cff4f878664589291cdfa5831e7d46b374b5e9.json",
+      "op": "add_active",
+      "src": "var/discovery/probation/p_seeds_gnews_001_0001.json",
+      "url": "https://news.google.com/rss/search?q=U.S.+Congress+immigration+reform&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "dst": "var/registrar/active/9281fe7e1758dfa0b3dcc0a35818c25625411a56.json",
+      "op": "add_active",
+      "src": "var/discovery/probation/p_seeds_gnews_001_0002.json",
+      "url": "https://news.google.com/rss/search?q=S%26P+500+earnings+outlook&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "dst": "var/registrar/active/61f11c90cbcf125ad4c1bca4a27dd4b201963b2c.json",
+      "op": "add_active",
+      "src": "var/discovery/probation/p_seeds_gnews_001_0003.json",
+      "url": "https://news.google.com/rss/search?q=open+source+LLM+inference+optimization&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "dst": "var/registrar/active/dbe69f55815193e62b3ecf44ae12cc015bf0b5ab.json",
+      "op": "add_active",
+      "src": "var/discovery/probation/p_seeds_gnews_001_0004.json",
+      "url": "https://news.google.com/rss/search?q=Korea+E-9+visa+policy+update&hl=en-US&gl=US&ceid=US%3Aen"
     }
   ],
   "v": 1

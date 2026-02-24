@@ -1,6 +1,6 @@
 {
-  "source_probation_file": "var/discovery/probation/p_fixture_001.json",
+  "source_probation_file": "var/discovery/probation/p_seeds_gnews_001_0001.json",
   "status": "active",
-  "url": "https://example.com/rss",
+  "url": "https://news.google.com/rss/search?q=U.S.+Congress+immigration+reform&hl=en-US&gl=US&ceid=US%3Aen",
   "v": 1
 }
